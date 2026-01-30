@@ -1,7 +1,12 @@
 def verificar_fatores_risco(sintoma):
-    """Verifica se um sintoma está entre os alertas do SobreVidas para câncer de boca."""
+    """Verifica se um sintoma está entre os alertas para câncer de boca."""
 
-    alertas = ["mancha branca", "ferida que não cicatriza", "nódulo no pescoço", "rouquidão persistente"]
+    alertas = [
+        "mancha branca",
+        "ferida que não cicatriza",
+        "nódulo no pescoço",
+        "rouquidão persistente"
+        ]
     
     if sintoma.lower() in alertas:
         return "Alerta: Este sintoma requer avaliação profissional prioritária na plataforma SobreVidas."
