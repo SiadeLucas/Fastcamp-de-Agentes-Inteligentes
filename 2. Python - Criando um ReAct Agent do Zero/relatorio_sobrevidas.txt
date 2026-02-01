@@ -2,32 +2,36 @@ QUERY DO USUÁRIO: Tenho uma ferida que não cicatriza há 20 dias e minha boca 
 ==================================================
 
 PASSO 1:
-Thought: O usuário relatou uma ferida que não cicatriza há 20 dias e boca seca, o que pode ser um sinal de alerta para o câncer de boca. É importante verificar os fatores de risco associados a esses sintomas e definir a prioridade clínica para um possível encaminhamento.
+Thought: O usuário relata uma ferida que não cicatriza há 20 dias e mouth seca. Isso pode ser um sinal de alerta para o câncer de boca, especialmente se a ferida não estiver cicatrizando. Além disso, a boca seca pode ser um sintoma associado a várias condições, incluindo o câncer de boca. É importante verificar os fatores de risco e definir a prioridade clínica.
 
 Action: verificar_fatores_risco: ferida que não cicatriza
 PAUSE
 
-(Aguardando a resposta da ação para prosseguir com a próxima etapa)
+(Aguardando a resposta da ação para prosseguir)
 
 >>> Observation: Alerta: Este sintoma requer avaliação profissional prioritária na plataforma SobreVidas.
 
 PASSO 2:
-Thought: Com base na observação, o sintoma de ferida que não cicatriza é um sinal de alerta que requer avaliação profissional prioritária. Além disso, o usuário também relatou boca seca, o que pode ser um sintoma associado. É importante agora definir a prioridade clínica para o encaminhamento e oferecer suporte para o sintoma de boca seca.
-
-Action: triagem_prioridade: 20
-PAUSE
-
->>> Observation: ALTA PRIORIDADE: Encaminhar para uma Unidade Básica de Saúde imediatamente.
-
-PASSO 3:
-Thought: Com a prioridade clínica definida como ALTA PRIORIDADE, é fundamental que o usuário seja encaminhado para uma Unidade Básica de Saúde imediatamente. Além disso, o usuário ainda relata boca seca, que pode ser um sintoma desconfortável. Oferecer suporte paliativo para esse sintoma pode ser útil.
+Thought: Com base na observação, o sintoma da ferida que não cicatriza é um alerta para uma avaliação profissional prioritária. Isso sugere que o usuário deve procurar atendimento médico o mais rápido possível. Além disso, o usuário também relata boca seca, que pode ser um sintoma associado ao câncer de boca ou outras condições. É importante oferecer suporte paliativo para este sintoma e definir a prioridade clínica para o encaminhamento à Unidade Básica de Saúde.
 
 Action: suporte_paliativo: boca seca
 PAUSE
 
+(Aguardando a resposta da ação para prosseguir)
+
 >>> Observation: Use saliva artificial e aumente a ingestão de água em pequenos goles.
 
-PASSO 4:
-Thought: Com as observações anteriores, podemos concluir que o usuário deve ser encaminhado para uma Unidade Básica de Saúde imediatamente devido à ferida que não cicatriza, e que measures paliativas como uso de saliva artificial e aumento da ingestão de água podem ajudar a aliviar o sintoma de boca seca.
+PASSO 3:
+Thought: Com base na observação, o usuário pode aliviar a boca seca usando saliva artificial e aumentando a ingestão de água em pequenos goles. No entanto, é fundamental lembrar que a ferida que não cicatriza é o sintoma principal que requer atenção médica imediata. Para definir a prioridade clínica e garantir que o usuário receba o atendimento necessário, é importante realizar a triagem de prioridade.
 
-Answer: Procure uma Unidade Básica de Saúde imediatamente para avaliar a ferida que não cicatriza. Enquanto isso, use saliva artificial e aumente a ingestão de água em pequenos goles para ajudar a aliviar a boca seca. Lembre-se de que essas orientações não substituem um diagnóstico médico e é fundamental buscar atenção médica para uma avaliação precisa.
+Action: triagem_prioridade: 20
+PAUSE
+
+(Aguardando a resposta da ação para prosseguir)
+
+>>> Observation: ALTA PRIORIDADE: Encaminhar para uma Unidade Básica de Saúde imediatamente.
+
+PASSO 4:
+Thought: Com base na observação, a prioridade clínica é alta e o usuário deve ser encaminhado para uma Unidade Básica de Saúde imediatamente. Isso confirma a necessidade de avaliação profissional urgente para a ferida que não cicatriza e outros sintomas relacionados. O suporte paliativo para a boca seca já foi oferecido, e agora é fundamental que o usuário procure atendimento médico o mais rápido possível.
+
+Answer: Você deve procurar atendimento médico imediatamente em uma Unidade Básica de Saúde. Além disso, continue usando saliva artificial e aumente a ingestão de água em pequenos goles para aliviar a boca seca. Lembre-se de que um diagnóstico preciso só pode ser feito por um profissional de saúde, e é importante seguir as orientações médicas para um tratamento adequado.
